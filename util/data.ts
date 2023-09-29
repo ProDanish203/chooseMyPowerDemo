@@ -16,3 +16,22 @@ export const navLinks = [
         path: "/contact",
     },
 ]
+
+export const stats = [
+    {
+        title: "Years of experience",
+        value: 25
+    },
+    {
+        title: "Staff",
+        value: 8
+    },
+    {
+        title: "Projects done",
+        value: 150
+    },
+    {
+        title: "Happy customers",
+        value: 3500
+    },
+]

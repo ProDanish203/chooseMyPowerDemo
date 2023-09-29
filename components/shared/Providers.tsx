@@ -12,7 +12,7 @@ export const Providers = () => {
   return (
     <div className="my-5">
     <Swiper
-    spaceBetween={50}
+    spaceBetween={40}
     breakpoints={{
       300: {
         slidesPerView: 2,
@@ -27,7 +27,6 @@ export const Providers = () => {
     slidesPerView={4}
     modules={[Autoplay]}
     loop={true}
-    centeredSlides={true}
     speed={2000}
     autoplay={{
         delay: 0,

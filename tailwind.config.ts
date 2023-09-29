@@ -16,7 +16,8 @@ const config: Config = {
         accent: "#433bff",
       },
       backgroundImage:{
-        "heroBanner": "linear-gradient(to right bottom, rgba(0,0,0,0), rgba(0,0,0, 0.9)), url('/banner1.jpg')"
+        "heroBanner": "linear-gradient(to right bottom, rgba(0,0,0,0), rgba(0,0,0, 0.9)), url('/banner1.jpg')",
+        "counter": "linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0, 0.7)), url('/banner2.jpg')",
       }
     },
   },

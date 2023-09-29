@@ -1,4 +1,5 @@
 "use client"
+import { useRouter } from "next/navigation";
 import { FormEvent, useState } from "react"
 import { toast } from "react-toastify";
 
@@ -7,13 +8,14 @@ export const Hero = () => {
   const [zip, setZip] = useState("");
   const [type, setType] = useState("business");
 
+  const router = useRouter()
+
   const handleSubmit = (e: FormEvent) => {
     e.preventDefault();
 
     if(!zip || zip.match(/^[0-9]+$/) == null || zip.length != 5) return toast.error("Please provide a valid zip code"); 
 
-    console.log("zip: " + zip);
-    console.log("type: " + type)
+    router.push(`/providers/${zip}`);
 
   }
 
@@ -48,7 +50,7 @@ export const Hero = () => {
         </div>
 
         <div>
-          <button className="bg-primary text-bg rounded-md py-2.5 px-4 w-full flex gap-2 items-center"
+          <button className="bg-accent hover:bg-primary text-bg rounded-md py-2.5 px-4 w-full flex gap-2 items-center"
           type="submit"
           >
             <i className="fas fa-magnifying-glass"></i>
