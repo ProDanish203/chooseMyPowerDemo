@@ -13,6 +13,7 @@ export const Header = () => {
         <nav className='flex items-center justify-between gap-3'>
             {navLinks.map((link, i) => (
                 <Link href={link.path}
+                key={i}
                 className='hover:text-primary text-white font-medium text-md'
                 >{link.name}</Link>
             ))}
